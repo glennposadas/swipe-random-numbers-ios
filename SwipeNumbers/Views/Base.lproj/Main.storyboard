@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gbe-oU-du2">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slider View Controller-->
+        <scene sceneID="Jvx-BT-qBV">
+            <objects>
+                <viewController storyboardIdentifier="SliderViewController" id="C3T-bs-A6M" customClass="SliderViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIb-RC-5qN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htS-sL-Whz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VlH-3K-rjN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="htS-sL-Whz" secondAttribute="trailing" id="KJ0-hU-T14"/>
+                            <constraint firstItem="htS-sL-Whz" firstAttribute="top" secondItem="kIb-RC-5qN" secondAttribute="top" id="Low-V5-zmg"/>
+                            <constraint firstItem="htS-sL-Whz" firstAttribute="leading" secondItem="kIb-RC-5qN" secondAttribute="leading" id="cbf-om-TWa"/>
+                            <constraint firstAttribute="bottom" secondItem="htS-sL-Whz" secondAttribute="bottom" id="yJ5-vw-UTV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="htS-sL-Whz" id="tjX-ds-2si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbt-O9-GME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="431"/>
+        </scene>
+        <!--Home Settings View Controller-->
+        <scene sceneID="Wi4-ID-eiu">
+            <objects>
+                <viewController storyboardIdentifier="HomeSettingsViewController" id="Gbe-oU-du2" customClass="HomeSettingsViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DKr-qg-Peb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iW1-8L-ntn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-N4-6PZ">
+                                <rect key="frame" x="-38" y="140" width="396" height="288"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wn8-K6-Ruf">
+                                        <rect key="frame" x="55.5" y="0.0" width="285" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-wx-F4q">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="WVX-wk-5S0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="100"/>
+                                                <size key="titleShadowOffset" width="2" height="3"/>
+                                                <state key="normal" title="START">
+                                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="200"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="start:" destination="Gbe-oU-du2" eventType="touchUpInside" id="NTA-Gm-TUK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-ot-nHG">
+                                                <rect key="frame" x="22.5" y="180" width="240.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gOg-87-qjs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                                <state key="normal" title="Randomize Numbers" image="ic_checkbox_off">
+                                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="35"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="randomizeLettersToggled:" destination="Gbe-oU-du2" eventType="touchUpInside" id="3JP-5k-i3R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTY-ko-FOj">
+                                        <rect key="frame" x="0.0" y="238" width="396" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JhL-fU-oJf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f38-b2-seg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bFB-N4-6PZ" firstAttribute="centerY" secondItem="iW1-8L-ntn" secondAttribute="centerY" id="6Jl-pa-5k4"/>
+                            <constraint firstAttribute="bottom" secondItem="iW1-8L-ntn" secondAttribute="bottom" id="FPf-Gd-wwB"/>
+                            <constraint firstItem="iW1-8L-ntn" firstAttribute="leading" secondItem="DKr-qg-Peb" secondAttribute="leading" id="Q2a-yd-ZnJ"/>
+                            <constraint firstItem="iW1-8L-ntn" firstAttribute="top" secondItem="DKr-qg-Peb" secondAttribute="top" id="Xvc-GX-qsi"/>
+                            <constraint firstItem="bFB-N4-6PZ" firstAttribute="centerX" secondItem="iW1-8L-ntn" secondAttribute="centerX" id="dGH-wW-oA8"/>
+                            <constraint firstAttribute="trailing" secondItem="iW1-8L-ntn" secondAttribute="trailing" id="fVd-ea-FX6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button_RandomizeLetters" destination="RQO-ot-nHG" id="m7j-S3-RTJ"/>
+                        <outlet property="button_Start" destination="2cm-wx-F4q" id="rBS-20-Nbi"/>
+                        <outlet property="view_AdContainer" destination="WTY-ko-FOj" id="vUs-qf-MAK"/>
+                        <segue destination="C3T-bs-A6M" kind="presentation" identifier="start" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="6Iv-XF-MnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bM-wv-njX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-789.25233644859804" y="430.88552915766741"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="x1K-LT-n8h">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="kvg-TS-bk9" customClass="ContentViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dB-XI-t19">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="su3-8U-PRy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="none" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-Eu-fll">
+                                <rect key="frame" x="16" y="103" width="288" height="362"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <color key="textColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="3"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="600"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uSp-Zq-MBL" appends="YES" id="mt4-7W-xlA"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gha-KF-6TK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="su3-8U-PRy" secondAttribute="bottom" id="2b4-bL-65g"/>
+                            <constraint firstItem="gha-KF-6TK" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ppN-Eu-fll" secondAttribute="bottom" constant="4" id="Alz-E9-gje"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="leading" secondItem="gha-KF-6TK" secondAttribute="leading" constant="16" id="CTH-tQ-RsT"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="trailing" secondItem="gha-KF-6TK" secondAttribute="trailing" constant="-16" id="HAO-pq-Ksu"/>
+                            <constraint firstAttribute="trailing" secondItem="su3-8U-PRy" secondAttribute="trailing" id="KrF-KP-TmU"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="centerY" secondItem="su3-8U-PRy" secondAttribute="centerY" id="NxM-XG-ppV"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gha-KF-6TK" secondAttribute="top" constant="4" id="dZp-T1-Syz"/>
+                            <constraint firstItem="su3-8U-PRy" firstAttribute="top" secondItem="1dB-XI-t19" secondAttribute="top" id="hVQ-f9-fJT"/>
+                            <constraint firstItem="su3-8U-PRy" firstAttribute="leading" secondItem="1dB-XI-t19" secondAttribute="leading" id="z0e-Mf-bt6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ppN-Eu-fll" id="xaQ-jE-Qta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdf-2h-2rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uSp-Zq-MBL">
+                    <connections>
+                        <action selector="labelTapped:" destination="kvg-TS-bk9" id="4wH-Li-ch2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="742" y="431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="936" height="936"/>
+        <image name="ic_checkbox_off" width="27.5" height="27.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
